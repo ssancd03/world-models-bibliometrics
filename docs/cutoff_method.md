@@ -6,6 +6,10 @@ The cutoff is supported by an analysis of world-model terminology in robotics an
 
 After consolidating overlapping export fragments, the six-source inputs contain 20,388 records. The parser resolves duplicates using bibliographic identifiers and normalized title matching, producing 18,109 publications. Conflicting years are resolved using the earliest observed year. Eleven records have no publication year. The temporal analysis uses the 10,593 dated records from 2010–2025; the incomplete 2026 year is excluded. Candidate changes range from 2014 to 2022.
 
+Platform export limits required batch downloads, including separate publication-year ranges for ACM Digital Library and SpringerLink. The 18 original files are export batches, not independent searches. They are consolidated into seven analysis inputs before cross-database deduplication.
+
+The specified 2010 start gives four complete baseline years before the earliest candidate boundary, 2014, and ten years before the selected 2020 boundary. Earlier records remain in the full corpus but are outside the focused temporal comparison. The lower bound is an analysis-window choice, not an estimated historical starting point. The window ends at 2025 to avoid comparing the incomplete 2026 year with complete years.
+
 ## Classification
 
 Method A uses contextual lexical rules in titles, abstracts, and keywords. Method B uses `MoritzLaurer/deberta-v3-base-zeroshot-v2.0`; Method C uses `cross-encoder/nli-deberta-v3-small` and a relevance filter. The neural methods use related architectures and cannot be regarded as independent validation. The archived predictions are used for numerical reproduction.
@@ -26,4 +30,10 @@ The same procedure is repeated after removing each source. Omitting ACM, IEEE, S
 
 [select_cutoff.py](../bibliometrics/analysis/scripts/select_cutoff.py) contains the exact formulas. [summary.json](../bibliometrics/analysis/results/cutoff/summary.json) includes the decision, support intervals, individual-source estimates, leave-one-source-out estimates, and classifier agreement. [make_cutoff_figure.py](../scripts/make_cutoff_figure.py) generates the figures and their plotted data. [verify_results.py](../scripts/verify_results.py) checks complete numerical outputs against the reference snapshot.
 
-The analysis is affected by terminology, database composition, automatic labeling, missing abstracts, and time-window choices. It establishes a reproducible scope boundary, not a causal historical turning point or proof that every pre-2020 study is irrelevant. Exact search strings and search execution dates are not included in the available bibliometric search record.
+The analysis is affected by terminology, database composition, automatic labeling, missing abstracts, and time-window choices. It establishes a reproducible scope boundary, not a causal historical turning point or proof that every pre-2020 study is irrelevant.
+
+## Reproduction details
+
+The default reproduction command uses the saved classification tables and the dependencies pinned in `requirements.txt`; it does not perform new neural inference. The `--from-raw` option also reconstructs the corpus and rule-based labels, then checks alignment before reusing the saved text-model predictions. Supply the 18 original exports listed in `provenance.json` for this option; those files are excluded from Git.
+
+New text-model inference requires PyTorch, Transformers, and the relevant model downloads in addition to the analysis dependencies. Method C expects its model to be available locally. Method B records the model revision as `main`; neither method records an immutable model commit. The archived classifications are therefore the reference for exact numerical reproduction.
