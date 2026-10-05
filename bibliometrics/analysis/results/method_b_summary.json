@@ -1,0 +1,59 @@
+{
+  "scope": {
+    "deduplicated_records": 18109,
+    "records_without_year": 11,
+    "content_available": "title + abstract + keywords when present; no article full text"
+  },
+  "independent_model": {
+    "name": "MoritzLaurer/deberta-v3-base-zeroshot-v2.0",
+    "revision": "main",
+    "method": "zero-shot natural-language inference; v2 labels hidden during inference",
+    "max_tokens": 192,
+    "hypotheses": {
+      "INTRINSIC": "This research uses a learned predictive internal world model that represents or predicts environment dynamics for an artificial agent or robot.",
+      "EXTRINSIC": "This research uses an explicit external representation of the environment, such as a map, geometric scene, spatial database, knowledge base, or symbolic world model, for an artificial agent or robot.",
+      "COMBINED": "The main contribution combines a learned predictive internal world model with an explicit external map, geometric scene, spatial database, knowledge base, or symbolic environment representation for an artificial agent or robot.",
+      "UNRELATED": "The main subject of this research is something other than world models or environment representations used by artificial agents or robots."
+    },
+    "class_counts": {
+      "EXTRINSIC": 2587,
+      "COMBINED": 1101,
+      "UNRELATED": 9341,
+      "AMBIGUOUS": 3986,
+      "INTRINSIC": 1094
+    },
+    "strict_pure_intrinsic_crossing": null,
+    "intrinsic_presence_crossing_including_hybrids": 2020
+  },
+  "v2": {
+    "class_counts": {
+      "EXTRINSIC": 1536,
+      "AMBIGUOUS": 15620,
+      "INTRINSIC": 953
+    }
+  },
+  "comparison": {
+    "cross_counts": {
+      "AMBIGUOUS__TO__AMBIGUOUS": 3401,
+      "AMBIGUOUS__TO__COMBINED": 786,
+      "AMBIGUOUS__TO__EXTRINSIC": 1939,
+      "AMBIGUOUS__TO__INTRINSIC": 822,
+      "AMBIGUOUS__TO__UNRELATED": 8672,
+      "EXTRINSIC__TO__AMBIGUOUS": 358,
+      "EXTRINSIC__TO__COMBINED": 266,
+      "EXTRINSIC__TO__EXTRINSIC": 469,
+      "EXTRINSIC__TO__INTRINSIC": 61,
+      "EXTRINSIC__TO__UNRELATED": 382,
+      "INTRINSIC__TO__AMBIGUOUS": 227,
+      "INTRINSIC__TO__COMBINED": 49,
+      "INTRINSIC__TO__EXTRINSIC": 179,
+      "INTRINSIC__TO__INTRINSIC": 211,
+      "INTRINSIC__TO__UNRELATED": 287
+    },
+    "v2_definitive_records": 2489,
+    "comparable_intrinsic_extrinsic_records": 920,
+    "same_intrinsic_extrinsic_label": 680,
+    "agreement_fraction_when_both_definitive": 0.7391304347826086,
+    "v2_ambiguous_resolved_semantically": 11433
+  }
+}

@@ -1,0 +1,519 @@
+{
+  "scope": {
+    "records_total": 18109,
+    "records_with_year": 18098,
+    "analysis_window": [
+      2010,
+      2025
+    ],
+    "candidate_cutoffs": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "records_in_analysis_window": 10593,
+    "cutoff_is_inclusive": true,
+    "classifiers": [
+      "method_a",
+      "method_b",
+      "method_c"
+    ],
+    "cross_method_alignment_validated_by": "record_id + normalized title + publication year"
+  },
+  "automatic_rule": {
+    "primary_family": "binomial_level_shift",
+    "validation_families": [
+      "bayesian_change",
+      "multinomial_change"
+    ],
+    "agreement_tolerance_years": 1,
+    "minimum_close_validators": 2,
+    "fallback": "median of the three decision families",
+    "segmented_regression_role": "secondary diagnostic; primary eligibility requires improved BIC and acceleration in at least two series"
+  },
+  "decision": {
+    "final_year": 2020,
+    "primary_year": 2020,
+    "validators_close": 2,
+    "rule_applied": "Retain the primary binomial change: both validators lie within one year.",
+    "segmented_diagnostic": {
+      "eligible_as_primary": false,
+      "series_with_bic_support": 1,
+      "series_showing_acceleration_after_break": 2,
+      "role": "secondary diagnostic for slope changes"
+    },
+    "family_years": {
+      "level_shift": 2020,
+      "segmented_regression": 2022,
+      "bayesian_change": 2020,
+      "multinomial_change": 2020
+    },
+    "step": {
+      "method_a": {
+        "year": 2019,
+        "support": [
+          2019,
+          2020
+        ],
+        "loglik": -897.2377908626163,
+        "before_probability": 0.07760532150776053,
+        "after_probability": 0.633276740237691,
+        "delta_bic_vs_no_change": 446.25003353036936
+      },
+      "method_b_learned_only": {
+        "year": 2020,
+        "support": [
+          2020
+        ],
+        "loglik": -1195.648059616085,
+        "before_probability": 0.24279835390946503,
+        "after_probability": 0.3846801346801347,
+        "delta_bic_vs_no_change": 26.99193428861372
+      },
+      "method_b_including_combined": {
+        "year": 2020,
+        "support": [
+          2018,
+          2019,
+          2020
+        ],
+        "loglik": -1724.5401717666723,
+        "before_probability": 0.42679127725856697,
+        "after_probability": 0.5262475696694751,
+        "delta_bic_vs_no_change": 7.883749606736728
+      },
+      "method_c_learned_only": {
+        "year": 2020,
+        "support": [
+          2020
+        ],
+        "loglik": -1750.8883995112208,
+        "before_probability": 0.1640625,
+        "after_probability": 0.4624425140521206,
+        "delta_bic_vs_no_change": 238.44985147730222
+      },
+      "method_c_including_combined": {
+        "year": 2021,
+        "support": [
+          2019,
+          2020,
+          2021
+        ],
+        "loglik": -3387.9591676370674,
+        "before_probability": 0.6018078020932446,
+        "after_probability": 0.7031105635971666,
+        "delta_bic_vs_no_change": 41.02208668480216
+      }
+    },
+    "segmented": {
+      "method_a": {
+        "year": 2022,
+        "support": [
+          2021,
+          2022
+        ],
+        "loglik": -888.5202523971819,
+        "odds_ratio_before_per_year": 1.4919991817862592,
+        "odds_ratio_after_per_year": 1.1209895859556478,
+        "delta_bic_vs_single_trend": 1.62716769757958
+      },
+      "method_b_learned_only": {
+        "year": 2022,
+        "support": [
+          2021,
+          2022
+        ],
+        "loglik": -1200.1548910959302,
+        "odds_ratio_before_per_year": 1.0933618223860733,
+        "odds_ratio_after_per_year": 0.9442890098805707,
+        "delta_bic_vs_single_trend": -8.240579010807778
+      },
+      "method_b_including_combined": {
+        "year": 2022,
+        "support": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "loglik": -1726.5599902329438,
+        "odds_ratio_before_per_year": 1.0540330303032164,
+        "odds_ratio_after_per_year": 0.9721814131267019,
+        "delta_bic_vs_single_trend": -12.589784465699267
+      },
+      "method_c_learned_only": {
+        "year": 2014,
+        "support": [
+          2014,
+          2015,
+          2016,
+          2017
+        ],
+        "loglik": -1738.4456500631,
+        "odds_ratio_before_per_year": 0.9115808373282142,
+        "odds_ratio_after_per_year": 1.2014589632619301,
+        "delta_bic_vs_single_trend": -7.090506909340547
+      },
+      "method_c_including_combined": {
+        "year": 2017,
+        "support": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022
+        ],
+        "loglik": -3382.1008771357747,
+        "odds_ratio_before_per_year": 0.9936384030039506,
+        "odds_ratio_after_per_year": 1.0764320111255588,
+        "delta_bic_vs_single_trend": -9.582313143915599
+      }
+    },
+    "bayesian": {
+      "method_a": {
+        "year": 2019,
+        "support_95": [
+          2019,
+          2020
+        ],
+        "probabilities": {
+          "2014": 2.1140183263508424e-59,
+          "2015": 1.2937573352398036e-48,
+          "2016": 6.361488531211275e-36,
+          "2017": 2.0328934130066465e-21,
+          "2018": 2.3497048488541162e-15,
+          "2019": 0.8520680360551817,
+          "2020": 0.14793196394478883,
+          "2021": 8.771638358254416e-23,
+          "2022": 1.3867573902154917e-33
+        }
+      },
+      "method_b_learned_only": {
+        "year": 2020,
+        "support_95": [
+          2020
+        ],
+        "probabilities": {
+          "2014": 1.8910911986028609e-07,
+          "2015": 1.2489854560413752e-06,
+          "2016": 3.0398217857492333e-05,
+          "2017": 0.0009162854004922118,
+          "2018": 0.0033574021158931833,
+          "2019": 0.02159660266880813,
+          "2020": 0.9702848206507372,
+          "2021": 0.003681285677499521,
+          "2022": 0.00013176717423514354
+        }
+      },
+      "method_b_including_combined": {
+        "year": 2020,
+        "support_95": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "probabilities": {
+          "2014": 0.00017530009140237645,
+          "2015": 0.0008219635411667113,
+          "2016": 0.006605796426729828,
+          "2017": 0.0475959668976941,
+          "2018": 0.1056774658011587,
+          "2019": 0.2551367954805116,
+          "2020": 0.5343422105122743,
+          "2021": 0.04465731727504265,
+          "2022": 0.004987183974028222
+        }
+      },
+      "method_c_learned_only": {
+        "year": 2020,
+        "support_95": [
+          2020
+        ],
+        "probabilities": {
+          "2014": 6.375085780746105e-34,
+          "2015": 4.666242211718995e-27,
+          "2016": 1.539619980111792e-20,
+          "2017": 2.808378569156963e-11,
+          "2018": 1.2035729750000852e-05,
+          "2019": 0.006179492580502403,
+          "2020": 0.9924571097426461,
+          "2021": 0.001351361918965442,
+          "2022": 2.9251430240317384e-14
+        }
+      },
+      "method_c_including_combined": {
+        "year": 2021,
+        "support_95": [
+          2019,
+          2020,
+          2021
+        ],
+        "probabilities": {
+          "2014": 1.1405803721734018e-08,
+          "2015": 5.0517606510227385e-08,
+          "2016": 8.603987916404819e-07,
+          "2017": 0.0007489571007895257,
+          "2018": 0.002195429824389902,
+          "2019": 0.2593570782636356,
+          "2020": 0.2035478130404155,
+          "2021": 0.5334572576905477,
+          "2022": 0.0006925417579318818
+        }
+      }
+    },
+    "multinomial_b_relevant": {
+      "year": 2020,
+      "support_95": [
+        2020
+      ],
+      "probabilities": {
+        "2014": 1.9407589354106692e-07,
+        "2015": 1.1903060603537184e-06,
+        "2016": 2.7176548154664606e-05,
+        "2017": 0.0007676632289095623,
+        "2018": 0.0027118687239094,
+        "2019": 0.017098268525604268,
+        "2020": 0.9762544471180037,
+        "2021": 0.0030283887844350346,
+        "2022": 0.0001108026888063886
+      }
+    },
+    "multinomial_b_all_categories": {
+      "year": 2020,
+      "support_95": [
+        2020
+      ],
+      "probabilities": {
+        "2014": 3.691330688884742e-16,
+        "2015": 1.3441052380303911e-13,
+        "2016": 2.604451979066768e-10,
+        "2017": 7.08283031457225e-05,
+        "2018": 0.00012137170493052633,
+        "2019": 0.013807041297716233,
+        "2020": 0.9859971258956073,
+        "2021": 3.6320159918843598e-06,
+        "2022": 5.211557951050941e-10
+      }
+    },
+    "multinomial_c_relevant": {
+      "year": 2020,
+      "support_95": [
+        2020
+      ],
+      "probabilities": {
+        "2014": 3.008250991999354e-38,
+        "2015": 5.077796812916527e-30,
+        "2016": 1.176280008631867e-22,
+        "2017": 2.3265527787160666e-13,
+        "2018": 3.382396140017305e-06,
+        "2019": 0.00034814477270022053,
+        "2020": 0.9993615957018043,
+        "2021": 0.00028687712902132596,
+        "2022": 5.084633659625032e-15
+      }
+    },
+    "multinomial_c_all_categories": {
+      "year": 2020,
+      "support_95": [
+        2020
+      ],
+      "probabilities": {
+        "2014": 1.7148834562802468e-42,
+        "2015": 4.143317062259682e-34,
+        "2016": 3.163557918071213e-26,
+        "2017": 6.893823630102408e-16,
+        "2018": 8.099735878416843e-08,
+        "2019": 0.0003174654292825149,
+        "2020": 0.9996236535199626,
+        "2021": 5.880005334971583e-05,
+        "2022": 4.2933183356173445e-14
+      }
+    }
+  },
+  "leave_one_source_out": [
+    {
+      "omitted_source": "ACM Digital Library",
+      "remaining_records": 15699,
+      "final_year": 2020,
+      "primary_year": 2020,
+      "level_shift": 2020,
+      "segmented_regression": 2022,
+      "bayesian_change": 2020,
+      "multinomial_change": 2020
+    },
+    {
+      "omitted_source": "IEEE Xplore",
+      "remaining_records": 17998,
+      "final_year": 2020,
+      "primary_year": 2020,
+      "level_shift": 2020,
+      "segmented_regression": 2022,
+      "bayesian_change": 2020,
+      "multinomial_change": 2020
+    },
+    {
+      "omitted_source": "ScienceDirect",
+      "remaining_records": 18037,
+      "final_year": 2020,
+      "primary_year": 2020,
+      "level_shift": 2020,
+      "segmented_regression": 2022,
+      "bayesian_change": 2020,
+      "multinomial_change": 2020
+    },
+    {
+      "omitted_source": "Scopus",
+      "remaining_records": 9018,
+      "final_year": 2020,
+      "primary_year": 2020,
+      "level_shift": 2020,
+      "segmented_regression": 2016,
+      "bayesian_change": 2020,
+      "multinomial_change": 2020
+    },
+    {
+      "omitted_source": "SpringerLink",
+      "remaining_records": 13476,
+      "final_year": 2018,
+      "primary_year": 2018,
+      "level_shift": 2018,
+      "segmented_regression": 2022,
+      "bayesian_change": 2018,
+      "multinomial_change": 2018
+    },
+    {
+      "omitted_source": "Web of Science",
+      "remaining_records": 18050,
+      "final_year": 2020,
+      "primary_year": 2020,
+      "level_shift": 2020,
+      "segmented_regression": 2022,
+      "bayesian_change": 2020,
+      "multinomial_change": 2020
+    }
+  ],
+  "source_only": [
+    {
+      "source": "ACM Digital Library",
+      "records": 2581,
+      "final_year": 2020,
+      "primary_year": 2020,
+      "level_shift": 2020,
+      "segmented_regression": 2019,
+      "bayesian_change": 2020,
+      "multinomial_change": 2015
+    },
+    {
+      "source": "IEEE Xplore",
+      "records": 702,
+      "final_year": 2019,
+      "primary_year": 2019,
+      "level_shift": 2019,
+      "segmented_regression": 2019,
+      "bayesian_change": 2019,
+      "multinomial_change": 2017
+    },
+    {
+      "source": "ScienceDirect",
+      "records": 190,
+      "final_year": 2017,
+      "primary_year": 2017,
+      "level_shift": 2017,
+      "segmented_regression": 2018,
+      "bayesian_change": 2017,
+      "multinomial_change": 2014
+    },
+    {
+      "source": "Scopus",
+      "records": 10806,
+      "final_year": 2018,
+      "primary_year": 2018,
+      "level_shift": 2018,
+      "segmented_regression": 2022,
+      "bayesian_change": 2018,
+      "multinomial_change": 2018
+    },
+    {
+      "source": "SpringerLink",
+      "records": 5278,
+      "final_year": 2020,
+      "primary_year": 2020,
+      "level_shift": 2020,
+      "segmented_regression": 2016,
+      "bayesian_change": 2020,
+      "multinomial_change": 2021
+    },
+    {
+      "source": "Web of Science",
+      "records": 819,
+      "final_year": 2020,
+      "primary_year": 2020,
+      "level_shift": 2020,
+      "segmented_regression": 2016,
+      "bayesian_change": 2020,
+      "multinomial_change": 2018
+    }
+  ],
+  "classifier_agreement": {
+    "class_counts": {
+      "method_a": {
+        "EXTRINSIC": 1536,
+        "AMBIGUOUS": 15620,
+        "INTRINSIC": 953
+      },
+      "method_b": {
+        "EXTRINSIC": 2587,
+        "COMBINED": 1101,
+        "UNRELATED": 9341,
+        "AMBIGUOUS": 3986,
+        "INTRINSIC": 1094
+      },
+      "method_c": {
+        "COMBINED": 4705,
+        "INTRINSIC": 1453,
+        "AMBIGUOUS": 5946,
+        "UNRELATED": 2528,
+        "EXTRINSIC": 3477
+      }
+    },
+    "pairwise_pure_categories": {
+      "method_a__method_b": {
+        "comparable_records": 920,
+        "agreements": 680,
+        "agreement_fraction": 0.7391304347826086,
+        "cohen_kappa": 0.44366055230800233
+      },
+      "method_a__method_c": {
+        "comparable_records": 584,
+        "agreements": 512,
+        "agreement_fraction": 0.8767123287671232,
+        "cohen_kappa": 0.7296852499485702
+      },
+      "method_b__method_c": {
+        "comparable_records": 1334,
+        "agreements": 891,
+        "agreement_fraction": 0.6679160419790104,
+        "cohen_kappa": 0.24145588223968453
+      }
+    },
+    "all_three_comparable_records": 240,
+    "all_three_same_label": 147
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "description": "Bibliographic export manifest for the world-model publication cutoff analysis",
+  "raw_exports": [
+    {
+      "file": "bibliometrics/data/raw/acm.bib",
+      "sha256": "7fb5f7e2155c763d1d4e983b13db1ef21dff405b2f1871303cb3e7240bd33287",
+      "bytes": 1122062
+    },
+    {
+      "file": "bibliometrics/data/raw/acm_1962_2010_n947.bib",
+      "sha256": "1730816ddc3f668fa6959221c97f7c8f8eba983eb7b11e0d2b3e6ad1049b07fc",
+      "bytes": 1269195
+    },
+    {
+      "file": "bibliometrics/data/raw/acm_2021_2024_n564.bib",
+      "sha256": "99dfc51c65b2985887fe605ca07505b0b40fcec0c94469970b49d3091881dc27",
+      "bytes": 882122
+    },
+    {
+      "file": "bibliometrics/data/raw/acm_filter_2011_2020_n576.bib",
+      "sha256": "c4dee7ae2972e4fda43b9a7f5f74f52940847d615ee8df9e2c7e529f6ce63ab9",
+      "bytes": 986040
+    },
+    {
+      "file": "bibliometrics/data/raw/export2026.07.30-06.36.15.csv",
+      "sha256": "39544c546a7a2ce88fbb5e2ea2a50ff273df7bd5bc1c416e25428f4b5a771506",
+      "bytes": 1402011
+    },
+    {
+      "file": "bibliometrics/data/raw/savedrecs.bib",
+      "sha256": "073bbd1d178c8fcfcce307e6a42e312743491925ad0ea9062404f8e7b7267f57",
+      "bytes": 2705605
+    },
+    {
+      "file": "bibliometrics/data/raw/ScienceDirect_citations_1785485241727.bib",
+      "sha256": "1a9327b74be7b619f6585fde7e008b7a3def7a5764363adc12223e92f3db40ae",
+      "bytes": 175818
+    },
+    {
+      "file": "bibliometrics/data/raw/ScienceDirect_citations_1785485254422.bib",
+      "sha256": "6774b34f69dc0152f328e60bdcbb37ed3280dc84e92d26303e547c76927b19cf",
+      "bytes": 165208
+    },
+    {
+      "file": "bibliometrics/data/raw/scopus_export_Jul 30-2026_6256a535-d020-49cc-a6cf-09dbeb4af854.bib",
+      "sha256": "0ed69c60a2661af2c32e9636d59dee06636c1a801ee7d3fca72ad1b076573b21",
+      "bytes": 22599043
+    },
+    {
+      "file": "bibliometrics/data/raw/SearchResults.csv",
+      "sha256": "6596f4391e4bbc1cfef7704612d8e4353da46c90be7da3a05f29b512a753cb34",
+      "bytes": 268314
+    },
+    {
+      "file": "bibliometrics/data/raw/springer_1963_1995_n718.csv",
+      "sha256": "82ddabe825ee5124c919761b5fd0b5606ebc56fb3177eb73a8e7751c2ed6b9d5",
+      "bytes": 161008
+    },
+    {
+      "file": "bibliometrics/data/raw/springer_1996_1999_n460.csv",
+      "sha256": "42b597a5fbebf3e36a124edd2e0b8dd50da3e70ceb51947dc2bec48ba4f6208a",
+      "bytes": 106854
+    },
+    {
+      "file": "bibliometrics/data/raw/springer_2000_2006_n849.csv",
+      "sha256": "4c83ddcbe306acc8b367f73471c942ebf13394fde6d91445de8a21ff66f86bc5",
+      "bytes": 209097
+    },
+    {
+      "file": "bibliometrics/data/raw/springer_2007_2009_n451.csv",
+      "sha256": "787ebc91a2b79c623c3154e08d0702b357a6427e4b12e9b0b70dd518f2c730d2",
+      "bytes": 114848
+    },
+    {
+      "file": "bibliometrics/data/raw/springer_2010_2015_n839.csv",
+      "sha256": "11fbdfe416c5cdf82e6128ccd2d36afad92496638c29f30982889426d03c507c",
+      "bytes": 218651
+    },
+    {
+      "file": "bibliometrics/data/raw/springer_2016_2019_n538.csv",
+      "sha256": "14b0390b1357f4da857baf30ec064c1ea8f4b38499eaaa58d29a07862975d9c7",
+      "bytes": 147356
+    },
+    {
+      "file": "bibliometrics/data/raw/springer_2020_2023_n632.csv",
+      "sha256": "f7fd15ed9366a3585064346b84fce6b3d99ab9eda2e9f64a9472f9225ed209b6",
+      "bytes": 165358
+    },
+    {
+      "file": "bibliometrics/data/raw/springer_2024_2027_n780.csv",
+      "sha256": "2caab1dac9719e2463adbc4a923cd7949e72cfdfd8bcb01f9f1edc0536ad13e5",
+      "bytes": 208882
+    }
+  ],
+  "neural_inference": "Saved predictions are included for exact numerical reproduction."
+}

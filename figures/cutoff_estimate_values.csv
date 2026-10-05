@@ -1,0 +1,9 @@
+series,year,support_min,support_max
+A: contextual rules,2019,2019,2020
+B: learned only,2020,2020,2020
+B: including combined,2020,2018,2020
+C: learned only,2020,2020,2020
+C: including combined,2021,2019,2021
+Primary boundary (lower median),2020,2020,2020
+Bayesian check,2020,2020,2020
+Multinomial check,2020,2020,2020

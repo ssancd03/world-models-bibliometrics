@@ -1,0 +1,95 @@
+{
+  "policy": "Original downloads unchanged; analysis uses only data/inputs",
+  "originals_directory": "data\\raw",
+  "working_directory": "data\\inputs",
+  "direct_exports": {
+    "scopus": {
+      "original_file": "data\\raw\\scopus_export_Jul 30-2026_6256a535-d020-49cc-a6cf-09dbeb4af854.bib",
+      "working_file": "data\\inputs\\scopus.bib",
+      "sha256": "0ed69c60a2661af2c32e9636d59dee06636c1a801ee7d3fca72ad1b076573b21"
+    },
+    "ieee": {
+      "original_file": "data\\raw\\export2026.07.30-06.36.15.csv",
+      "working_file": "data\\inputs\\ieee.csv",
+      "sha256": "39544c546a7a2ce88fbb5e2ea2a50ff273df7bd5bc1c416e25428f4b5a771506"
+    },
+    "web_of_science": {
+      "original_file": "data\\raw\\savedrecs.bib",
+      "working_file": "data\\inputs\\web_of_science.bib",
+      "sha256": "073bbd1d178c8fcfcce307e6a42e312743491925ad0ea9062404f8e7b7267f57"
+    }
+  },
+  "acm": {
+    "input_files": [
+      "data\\raw\\acm_1962_2010_n947.bib",
+      "data\\raw\\acm_filter_2011_2020_n576.bib",
+      "data\\raw\\acm_2021_2024_n564.bib",
+      "data\\raw\\acm.bib"
+    ],
+    "input_records": {
+      "acm_1962_2010_n947.bib": 947,
+      "acm_filter_2011_2020_n576.bib": 576,
+      "acm_2021_2024_n564.bib": 564,
+      "acm.bib": 696
+    },
+    "raw_downloaded_records": 2783,
+    "exact_overlap_removed": 202,
+    "working_records": 2581,
+    "working_file": "data\\inputs\\acm.bib",
+    "sha256": "5fdb8da4e927fe362e62a275dbcd3395feef2715d8fe9e7fd7c696c80c46f5d3",
+    "identity_rule": "normalized DOI; otherwise stable ACM BibTeX identifier"
+  },
+  "springer": {
+    "input_files": [
+      "data\\raw\\springer_1963_1995_n718.csv",
+      "data\\raw\\springer_1996_1999_n460.csv",
+      "data\\raw\\springer_2000_2006_n849.csv",
+      "data\\raw\\springer_2007_2009_n451.csv",
+      "data\\raw\\springer_2010_2015_n839.csv",
+      "data\\raw\\springer_2016_2019_n538.csv",
+      "data\\raw\\springer_2020_2023_n632.csv",
+      "data\\raw\\springer_2024_2027_n780.csv",
+      "data\\raw\\SearchResults.csv"
+    ],
+    "input_records": {
+      "springer_1963_1995_n718.csv": 718,
+      "springer_1996_1999_n460.csv": 460,
+      "springer_2000_2006_n849.csv": 849,
+      "springer_2007_2009_n451.csv": 451,
+      "springer_2010_2015_n839.csv": 839,
+      "springer_2016_2019_n538.csv": 538,
+      "springer_2020_2023_n632.csv": 632,
+      "springer_2024_2027_n780.csv": 780,
+      "SearchResults.csv": 1000
+    },
+    "dated_slice_records": 5267,
+    "records_added_from_initial_export": 11,
+    "working_records": 5278,
+    "platform_result_count": 5279,
+    "unretrieved_records": 1,
+    "records_without_year": 11,
+    "working_file": "data\\inputs\\springer.csv",
+    "sha256": "f21f848da2159e34aafc88f20436c3cc8741d78789e77a4f992f9345e0d1cb61",
+    "identity_rule": "validated normalized DOI; otherwise stable URL (one exported Collection record)"
+  },
+  "sciencedirect": {
+    "input_files": [
+      "data\\raw\\ScienceDirect_citations_1785485241727.bib",
+      "data\\raw\\ScienceDirect_citations_1785485254422.bib"
+    ],
+    "working_files": [
+      "data\\inputs\\science_direct_1.bib",
+      "data\\inputs\\science_direct_2.bib"
+    ],
+    "working_records": 191,
+    "records_by_file": {
+      "science_direct_1.bib": 100,
+      "science_direct_2.bib": 91
+    },
+    "platform_result_count": 191,
+    "sha256": {
+      "science_direct_1.bib": "1a9327b74be7b619f6585fde7e008b7a3def7a5764363adc12223e92f3db40ae",
+      "science_direct_2.bib": "6774b34f69dc0152f328e60bdcbb37ed3280dc84e92d26303e547c76927b19cf"
+    }
+  }
+}

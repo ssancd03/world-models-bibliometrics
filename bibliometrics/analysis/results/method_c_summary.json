@@ -1,0 +1,37 @@
+{
+  "model": "cross-encoder/nli-deberta-v3-small",
+  "local_files_only": true,
+  "records": 18109,
+  "max_tokens": 192,
+  "hypotheses_per_category": 2,
+  "relevance_gate": {
+    "threshold": 0.5,
+    "hypotheses": [
+      "The main topic is world models or environment representations used by artificial agents or robots.",
+      "This paper studies how a robot or artificial agent represents or predicts its environment."
+    ],
+    "uses_entailment_vs_contradiction": true
+  },
+  "labels_from_methods_a_or_b_used_as_input": false,
+  "class_counts": {
+    "COMBINED": 4705,
+    "INTRINSIC": 1453,
+    "AMBIGUOUS": 5946,
+    "UNRELATED": 2528,
+    "EXTRINSIC": 3477
+  },
+  "hypotheses": {
+    "INTRINSIC": [
+      "This research uses a learned predictive internal world model for an artificial agent or robot.",
+      "The agent learns a model from data to predict future states, environment dynamics, or consequences of actions."
+    ],
+    "EXTRINSIC": [
+      "This research uses an explicit map, geometric scene, spatial database, knowledge base, or symbolic representation of the environment.",
+      "The world representation is an explicit external model of the environment used by an artificial agent or robot."
+    ],
+    "COMBINED": [
+      "This research combines a learned predictive model with an explicit map or environment representation.",
+      "The artificial agent uses both learned environment dynamics and an explicit spatial, geometric, or symbolic representation."
+    ]
+  }
+}

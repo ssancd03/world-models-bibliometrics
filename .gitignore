@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+# Original exports and the full abstract-bearing corpus are local inputs.
+bibliometrics/data/raw/
+bibliometrics/data/inputs/
+bibliometrics/analysis/results/classified_corpus.bib
