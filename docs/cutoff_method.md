@@ -24,7 +24,7 @@ The primary calculation fits a before/after binomial level shift to each series.
 
 The primary series estimates are 2019, 2020, 2020, 2020, and 2021. The primary, Bayesian, and multinomial family estimates are all 2020. Segmented regression is retained as a secondary diagnostic; its central estimate of 2022 does not replace the adopted boundary.
 
-The same procedure is repeated after removing each source. Omitting ACM, IEEE, ScienceDirect, Scopus, or Web of Science retains 2020. Omitting SpringerLink gives 2018. This is a material sensitivity and is shown explicitly in the figure, rather than hidden in a claim of universal agreement.
+The same procedure is repeated after removing each source. Omitting ACM, IEEE, ScienceDirect, Scopus, or Web of Science retains 2020. Omitting SpringerLink gives 2018. The five unchanged selections support consistency across most source combinations; the SpringerLink exception is shown explicitly in the figure.
 
 ## Outputs and limitations
 

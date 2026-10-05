@@ -1,5 +1,6 @@
 {
   "description": "Bibliographic export manifest for the world-model publication cutoff analysis",
+  "raw_export_availability": "The original exports listed below are local inputs excluded from Git, not files distributed with this repository. Saved classifications and analysis results are included for numerical reproduction without these exports.",
   "raw_exports": [
     {
       "file": "bibliometrics/data/raw/acm.bib",
