@@ -8,7 +8,7 @@ After consolidating overlapping export fragments, the six-source inputs contain 
 
 Platform export limits required batch downloads, including separate publication-year ranges for ACM Digital Library and SpringerLink. The 18 original files are export batches, not independent searches. They are consolidated into seven analysis inputs before cross-database deduplication.
 
-The specified 2010 start gives four complete baseline years before the earliest candidate boundary, 2014, and ten years before the selected 2020 boundary. Earlier records remain in the full corpus but are outside the focused temporal comparison. The lower bound is an analysis-window choice, not an estimated historical starting point. The window ends at 2025 to avoid comparing the incomplete 2026 year with complete years.
+The analysis starts in 2010 to focus on the recent evolution of learned predictive models while retaining a pre-2020 comparison period. Earlier records remain in the full corpus but are outside this temporal comparison. The lower bound is a scope choice, not an estimated or optimized historical starting point. The window ends at 2025 to avoid comparing the incomplete 2026 year with complete years.
 
 ## Classification
 

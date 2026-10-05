@@ -22,8 +22,7 @@ def read(name):
 
 def save(fig, name):
     fig.tight_layout()
-    for extension in ("png", "svg", "pdf"):
-        fig.savefig(FIGURES / f"{name}.{extension}", dpi=220, bbox_inches="tight")
+    fig.savefig(FIGURES / f"{name}.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
 
@@ -120,7 +119,7 @@ def sensitivity(summary):
 
 def main():
     plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.right": False,
-                         "pdf.fonttype": 42, "svg.fonttype": "none", "font.family": "DejaVu Sans"})
+                         "font.family": "DejaVu Sans"})
     FIGURES.mkdir(parents=True, exist_ok=True)
     summary = json.loads((RESULTS / "cutoff/summary.json").read_text(encoding="utf-8"))
     outputs = [("cutoff_annual_values.csv", trends(summary)),
@@ -131,7 +130,7 @@ def main():
             writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
             writer.writeheader()
             writer.writerows(rows)
-    print("Generated annual_trends, cutoff_estimates, and database_sensitivity in PNG, SVG, and PDF.")
+    print("Generated annual_trends, cutoff_estimates, and database_sensitivity in PNG (300 dpi).")
 
 
 if __name__ == "__main__":

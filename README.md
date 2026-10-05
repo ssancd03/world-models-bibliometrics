@@ -29,7 +29,7 @@ Platform export limits required batch downloads, including publication-year rang
 | Publications remaining with a year | 18,098 |
 | **Publications from 2010–2025 used in the temporal analysis** | **10,593** |
 
-The temporal calculations use **2010–2025**. Starting in 2010 gives four complete baseline years before the earliest tested cutoff, 2014, and ten before 2020. Earlier publications remain in the full corpus but are outside this comparison: 2010 is a specified analysis boundary, not an estimated historical starting point. **2026 is excluded because the year is incomplete**; undated records cannot enter the annual calculations.
+The analysis starts in **2010** to focus on the recent evolution of learned predictive models while retaining a pre-2020 comparison period. It includes complete years through **2025**; **2026 is excluded because the year is incomplete**. Earlier publications remain in the full corpus, and undated records are excluded from the annual calculations.
 
 Source counts and export integrity information are available in [sources.csv](bibliometrics/analysis/results/sources.csv) and [provenance.json](provenance.json).
 
@@ -66,8 +66,6 @@ python scripts/reproduce.py
 
 This reuses saved classifications, recalculates the cutoff, regenerates the figures, and checks the numerical results. For a corpus rebuild, add `--from-raw` and supply the original exports listed in `provenance.json`; those exports are excluded from Git. Additional inference requirements and limitations are explained in the [method documentation](docs/cutoff_method.md).
 
-## License and author
+## License
 
 Code and original documentation: [Apache License 2.0](LICENSE). Third-party bibliographic material retains its original terms.
-
-**Author:** Sergio Sánchez de la Fuente.
