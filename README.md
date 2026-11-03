@@ -1,4 +1,4 @@
-# Foundation and World Models for Agricultural Robot Navigation: A Systematic Review
+# Foundation and World Models for Outdoor Ground Robot Navigation: A Systematic Review with Implications for Agriculture
 
 This repository contains the supporting materials of the systematic review:
 
