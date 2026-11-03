@@ -1,6 +1,9 @@
-# Foundation and World Models for Outdoor Robot Navigation: A Systematic Review
+# Foundation and World Models for Agricultural Robot Navigation: A Systematic Review
 
-This repository contains the bibliometric analysis supporting the review's inclusive **2020 publication-year cutoff**: processing scripts, saved results, and figures explaining the decision and its sensitivity.
+This repository contains the supporting materials of the systematic review:
+
+- [review/](review/): search strategies for the six sources, the selection flow and the full-text decision for each assessed report.
+- The bibliometric analysis supporting the review's inclusive **2020 publication-year cutoff**: processing scripts, saved results, and figures explaining the decision and its sensitivity. Sections 1 to 5 below describe it.
 
 ## 1. Sources and corpus preparation
 
